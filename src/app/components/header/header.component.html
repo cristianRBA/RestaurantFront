@@ -1,1 +1,52 @@
-<p>header works!</p>
+<!-- <div>
+<mat-toolbar >
+    <span class="example-spacer">dsds</span>
+<a mat routerLink="/cancel" routerLinkActive="active">
+    Cancel
+</a>
+</mat-toolbar-row>
+</div> -->
+
+<!-- <mat-toolbar color="primary">
+    
+    <mat-toolbar-row>
+        <div class="spaceTool">
+                <a ui-buttom routerLink="">
+                    <span>RESTAURANT</span>
+                </a>   
+            <a ui-buttom routerLink="/cancel">
+                <span>cancelar reservas</span>
+      
+                 </a>
+        </div>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar-row>   
+    
+</mat-toolbar>
+    -->
+
+
+    <mat-toolbar color="primary">
+                <a ui-buttom routerLink="">
+                    <span class="spaceTool">RESTAURANT</span>
+                </a>   
+                <a ui-buttom routerLink="/cancel">
+                    <span class="spaceTool">cancelar</span>
+                 </a>
+                 <span class = "filler"></span>
+          <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>  
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Iniciar Sesión</button>
+             <button mat-menu-item>Salir</button> 
+          </mat-menu>
+
+    </mat-toolbar> 
+
+

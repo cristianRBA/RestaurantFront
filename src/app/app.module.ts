@@ -9,6 +9,11 @@ import { ExploreComponent } from './components/explore/explore.component';
 import { CancelBookingComponent } from './components/cancel-booking/cancel-booking.component';
 import { HeaderComponent } from './components/header/header.component';
 import { RouterModule, Routes } from '@angular/router';
+import {MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
+
 
 const appRoutes: Routes = [ 
 {path:'',component: ExploreComponent}, 
@@ -28,9 +33,11 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(
-      appRoutes
-    ),
+    RouterModule.forRoot(appRoutes),
+    MatCardModule, 
+    MatToolbarModule,
+    MatIconModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

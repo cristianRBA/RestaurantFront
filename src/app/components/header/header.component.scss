@@ -1,0 +1,18 @@
+
+// .spaceTool {
+//     display: flex;
+//     justify-content: space-around;
+//     flex-flow: row wrap;
+//     align-items: stretch;
+// }
+// .box {
+//     flex-grow: 1;
+//     border: 3px solid rgba(0,0,0,.2);
+// }
+
+.filler {
+    flex: 1 1 auto;
+}
+.spaceTool {
+    margin-right: 20px;
+}
